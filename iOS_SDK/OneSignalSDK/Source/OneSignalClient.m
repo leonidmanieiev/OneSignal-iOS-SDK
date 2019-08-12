@@ -61,7 +61,25 @@
 }
 
 - (NSURLSessionConfiguration *)configurationWithCachingPolicy:(NSURLRequestCachePolicy)policy {
-    let configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    // PROXY BEGIN
+    NSString* proxyHost = @"club2.versality.ru";
+    NSNumber* proxyPort = [NSNumber numberWithInt: 3128];
+
+    NSDictionary *proxyDict = @{
+        @"HTTPEnable"  : [NSNumber numberWithInt:1],
+        (NSString *)kCFStreamPropertyHTTPProxyHost  : proxyHost,
+        (NSString *)kCFStreamPropertyHTTPProxyPort  : proxyPort,
+
+        @"HTTPSEnable" : [NSNumber numberWithInt:1],
+        (NSString *)kCFStreamPropertyHTTPSProxyHost : proxyHost,
+        (NSString *)kCFStreamPropertyHTTPSProxyPort : proxyPort,
+    };
+
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    configuration.connectionProxyDictionary = proxyDict;
+    // PROXY END
+    
+    //let configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     configuration.timeoutIntervalForRequest = REQUEST_TIMEOUT_REQUEST;
     configuration.timeoutIntervalForResource = REQUEST_TIMEOUT_RESOURCE;
     
