@@ -144,6 +144,7 @@
 		91F58D8A1E7C9A240017D24D /* OneSignalNotificationSettingsIOS7.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F58D881E7C9A240017D24D /* OneSignalNotificationSettingsIOS7.m */; };
 		91F58D8B1E7C9A240017D24D /* OneSignalNotificationSettingsIOS7.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F58D881E7C9A240017D24D /* OneSignalNotificationSettingsIOS7.m */; };
 		91F60F7D1E80E4E400706E60 /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F60F7C1E80E4E400706E60 /* UncaughtExceptionHandler.m */; };
+		C2A8672D2301917100E0FA70 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A8672C2301917100E0FA70 /* CFNetwork.framework */; };
 		CA08FC731FE99AFD004C445F /* OneSignalClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FC721FE99AFD004C445F /* OneSignalClient.m */; };
 		CA08FC741FE99AFF004C445F /* OneSignalClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FC721FE99AFD004C445F /* OneSignalClient.m */; };
 		CA08FC751FE99B00004C445F /* OneSignalClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CA08FC721FE99AFD004C445F /* OneSignalClient.m */; };
@@ -305,6 +306,7 @@
 		91F58D881E7C9A240017D24D /* OneSignalNotificationSettingsIOS7.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneSignalNotificationSettingsIOS7.m; sourceTree = "<group>"; };
 		91F60F7B1E80E49A00706E60 /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		91F60F7C1E80E4E400706E60 /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		C2A8672C2301917100E0FA70 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CA08FC711FE99AFD004C445F /* OneSignalClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalClient.h; sourceTree = "<group>"; };
 		CA08FC721FE99AFD004C445F /* OneSignalClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneSignalClient.m; sourceTree = "<group>"; };
 		CA08FC761FE99B13004C445F /* OneSignalRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneSignalRequest.h; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A8672D2301917100E0FA70 /* CFNetwork.framework in Frameworks */,
 				3E66F5821D90A2C600E45A01 /* SystemConfiguration.framework in Frameworks */,
 				3E464ED71D88ED1F00DCF7E9 /* UIKit.framework in Frameworks */,
 				91719A9C1E80839500DBE43C /* UserNotifications.framework in Frameworks */,
@@ -403,6 +406,7 @@
 		37747F9519147D6500558FAD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2A8672C2301917100E0FA70 /* CFNetwork.framework */,
 				911E2CC71E399834003112A4 /* UserNotifications.framework */,
 				3E464ED91D88EE6A00DCF7E9 /* Foundation.framework */,
 				3E08E2701D49A5C8002176DE /* SystemConfiguration.framework */,
@@ -740,6 +744,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 37747F8A19147D6400558FAD;

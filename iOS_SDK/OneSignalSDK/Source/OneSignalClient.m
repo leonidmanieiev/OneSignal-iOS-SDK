@@ -30,6 +30,7 @@
 #import "ReattemptRequest.h"
 #import "OneSignal.h"
 #import "OneSignalCommonDefines.h"
+#import <CFNetwork/CFNetwork.h>
 
 @interface OneSignal (OneSignalClientExtra)
 + (BOOL)shouldLogMissingPrivacyConsentErrorWithMethodName:(NSString *)methodName;
